@@ -33,7 +33,7 @@ export default function NavBar () {
             <nav>
                 <CustomLink href="/" className='' title={'Home'}></CustomLink>
                 <CustomLink href="/about" className='mx-4' title={'About'}></CustomLink>
-                <CustomLink href="/project" className='mr-4' title={'Projects'}></CustomLink>
+                <CustomLink href="/projects" className='mr-4' title={'Projects'}></CustomLink>
             </nav>
 
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
