@@ -10,10 +10,8 @@ import Footer from './components/Footer'
 export default function Home() {
   return (
       <>
-      <main className='bg-light w-full min-h-screen'>
-        <NavBar></NavBar>
-        <BaseLayout>
-          <div className='flex items-center justify-between w-full'>
+      <BaseLayout>
+      <div className='flex items-center justify-between w-full'>
               <div className='w-1/2'>
                 <Image src={pp} alt='poto propil' className='w-3/5 h-auto rounded-full'></Image>
               </div>
@@ -37,10 +35,7 @@ export default function Home() {
                 </div>
               </div>
           </div>
-        </BaseLayout>
-      </main>
-
-      <Footer></Footer>
+      </BaseLayout>
       </>
   )
 }

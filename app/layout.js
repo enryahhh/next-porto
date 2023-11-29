@@ -1,5 +1,8 @@
 import { Inter,Montserrat } from 'next/font/google'
 import Head from 'next/head'
+import NavBar from './components/NavBar'
+import BaseLayout from './components/BaseLayout'
+import Footer from './components/Footer'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +23,12 @@ export default function RootLayout({ children }) {
 
       </Head>
       <body className={montserat.className}>
+      <main className='bg-light w-full min-h-screen'>
+        <NavBar></NavBar>
           {children}
+      </main>
+
+      <Footer></Footer>
       </body>
     </html>
   )
