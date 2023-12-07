@@ -26,12 +26,12 @@ export default function Home() {
                 </p>
 
                 <div className='flex items-center self-start mt-2'>
-                  <Link href="/" className='flex items-center text-light p-2.5 px-6 rounded-lg border-2 border-solid text-lg font-semibold 
+                  <Link href="/LINGGA_RESUME.pdf" target={"_blank"} className='flex items-center text-light p-2.5 px-6 rounded-lg border-2 border-solid text-lg font-semibold 
                                           bg-black hover:bg-transparent hover:border-black hover:border-solid hover:text-dark'>
                      Resume <LinkArrow className={"w-6 ml-1"}></LinkArrow>
                   </Link>
 
-                  <Link href="/" className='ml-4 text-lg font-medium capitalize underline'>Contact Me</Link>
+                  <Link href="mailto:linggaj28@gmail.com" className='ml-4 text-lg font-medium capitalize underline'>Contact Me</Link>
                 </div>
               </div>
           </div>

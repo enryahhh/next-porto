@@ -5,6 +5,8 @@ import Image from 'next/image'
 import portoHoly from '../../public/images/porto_holycats.png'
 import portoResto from '../../public/images/porto_resto.png'
 import portoTravel from '../../public/images/porto_travel.png'
+import portoMeows from '../../public/images/porto_meows.png'
+import portoCalm from '../../public/images/porto_calm.png'
 import { GithubIcon } from '../components/Icons'
 
 const FeaturedProjects = ({type,title,summary,img})=>{
@@ -31,7 +33,7 @@ const Project = ({type,title,img,summary})=>{
             <article className='w-full flex flex-col items-start justify-center rounded-2xl border
             border-solid border-dark bg-light shadow-2xl p-6'>
                 <Link href='/' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                    <Image src={img} className="w-full h-auto"/>
+                    <Image src={img} className="w-full h-64 object-cover"/>
                 </Link>
 
                 <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -73,6 +75,14 @@ export default function Projects() {
 
                 <div className='col-span-6'>
                     <Project title={'COMPANY PROFILE WEBSITE'} img={portoHoly} type='Project' summary='Website company profile dengan cms untuk perusahaan bernama holycatlabs dengan menggunakan laravel'></Project>
+                </div>
+
+                <div className='col-span-6'>
+                    <Project title={'MEOWS APP'} img={portoMeows} type='Project' summary='Aplikasi meows merupakan aplikasi forum dan blog untuk para pecinta kucing berdiskusi yang dibuat menggunakan flutter serta backendnya adalah laravel. Aplikasi ini dibuat dengan metodologi scrum dan menggunakan design sprint'></Project>
+                </div>
+
+                <div className='col-span-6'>
+                    <Project title={'MENTAL HEALTH APP'} img={portoCalm} type='Project' summary='Aplikasi mental health dengan fitur utama mendeteksi tingkat stres yang dihubungkan dengan smartband xiaomi untuk melakukan pendetekan tingkat stres. Dibuat menggunakan flutter dan firebase sebagai backend as a service'></Project>
                 </div>
             </div>
         </BaseLayout>

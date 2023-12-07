@@ -41,11 +41,11 @@ export default function NavBar () {
             </div>
 
             <nav className='flex items-center justify-between flex-wrap'>
-                <motion.a href="/" className='w-6 ml-3' whileHover={{y:-2}} whileTap={{scale:0.9}}>
+                <motion.a href="https://www.instagram.com/lingjul_05/" className='w-6 ml-3' target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}}>
                     <InstagramIcon></InstagramIcon>
                 </motion.a>
-                <motion.a href="/" className='w-6 mx-3' whileHover={{y:-2}} whileTap={{scale:0.9}}><LinkedInIcon></LinkedInIcon></motion.a>
-                <motion.a href="/" className='w-6 mr-3' whileHover={{y:-2}} whileTap={{scale:0.9}}><GithubIcon></GithubIcon></motion.a>
+                <motion.a href="https://www.linkedin.com/in/lingga-juliansyah" target={"_blank"} className='w-6 mx-3' whileHover={{y:-2}} whileTap={{scale:0.9}}><LinkedInIcon></LinkedInIcon></motion.a>
+                <motion.a href="https://www.github.com/enryahhh" className='w-6 mr-3' target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}}><GithubIcon></GithubIcon></motion.a>
             </nav>
         </header>
     </>
