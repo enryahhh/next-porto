@@ -63,7 +63,7 @@ export default function Projects() {
           
             <div className='grid grid-cols-12 gap-24 md:grid-cols-6 md:gap-0'>
                 <div className='col-span-12 md:col-span-6'>
-                    <FeaturedProjects title={'mdART RESTAURANT SYSTEM'} img={portoResto} type='Featured Project' summary={`Aplikasi ini menawarkan sistem pemesanan inovatif melalui QR Code, memungkinkan pelanggan untuk dengan cepat melihat menu, memesan, dan membayar secara aman melalui Payment Gateway Tripay. 
+                    <FeaturedProjects title={'SMART RESTAURANT SYSTEM'} img={portoResto} type='Featured Project' summary={`Aplikasi ini menawarkan sistem pemesanan inovatif melalui QR Code, memungkinkan pelanggan untuk dengan cepat melihat menu, memesan, dan membayar secara aman melalui Payment Gateway Tripay. 
                     Dengan integrasi Pusher, notifikasi realtime disediakan kepada koki, kasir, dan pemilik restoran, memastikan operasional yang efisien. 
                     Selain itu, aplikasi ini mendukung multi-user roles, seperti koki untuk mengelola pesanan, kasir untuk mengelola pembayaran, dan pemilik restoran untuk memantau kinerja keseluruhan dan mengelola menu.`} >
 
