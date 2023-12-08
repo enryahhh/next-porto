@@ -89,7 +89,7 @@ export default function NavBar () {
                 initial={{scale:0,opacity:0, x:'-50%', y:'-50%'}}
                 animate={{scale:1,opacity:1}}
                 className='min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                            bg-light/90 rounded-lg backdrop-blur-md py-32 sm:left-[12.5rem] sm:py-16 md:z-30'>
+                            bg-light/90 rounded-lg backdrop-blur-md py-32 sm:py-16 md:z-30'>
                 <nav className='flex items-center flex-col justify-center'>
                     <CustomLinkMobile toggle={handleClick} href="/" className='' title={'Home'}></CustomLinkMobile>
                     <CustomLinkMobile toggle={handleClick} href="/about" className='' title={'About'}></CustomLinkMobile>
@@ -97,7 +97,7 @@ export default function NavBar () {
                 </nav>
 
 
-                <nav className='flex items-center justify-between flex-wrap'>
+                <nav className='flex items-center justify-between flex-wrap sm:mt-3'>
                     <motion.a href="https://www.instagram.com/lingjul_05/" className='p-0 text-center bg-dark rounded-md' target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}}>
                         <InstagramIcon></InstagramIcon>
                     </motion.a>

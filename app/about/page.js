@@ -48,9 +48,10 @@ export default function About() {
               </div>
 
               <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 
-              shadow-[15px_10px_0px_0_rgba(0,0,0,1)] md:col-span-6 md:order-1'>
+              shadow-[15px_10px_0px_0_rgba(0,0,0,1)] md:col-span-4 md:order-1 md:col-start-2'>
               {/* <div className='absolute top-0 -z-5 -right-[1.5rem] w-[102%] h-[100%] rounded-[2rem] bg-dark'/> */}
-                    <Image src={pp} className='w-full h-auto rounded-2xl'></Image>
+                    <Image src={pp} className='w-full h-auto rounded-2xl' sizes='(max-width: 760px) 100vw,
+                       (max-width: 200px) 75vw, 50vw'></Image>
               </div>
           </div>
 
