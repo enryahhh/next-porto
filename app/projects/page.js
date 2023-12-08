@@ -13,15 +13,15 @@ const FeaturedProjects = ({type,title,summary,img})=>{
 
     return (
             <article className='w-full flex items-center justify-between rounded-3xl border
-            border-solid border-dark bg-light shadow-2xl p-12'>
-                <Link href='/' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
+            border-solid border-dark bg-light shadow-2xl shadow-white p-12 md:flex-col md:p-6 md:my-4'>
+                <Link href='/' className='w-1/2 md:w-full cursor-pointer overflow-hidden rounded-lg'>
                     <Image src={img} className="w-full h-auto"/>
                 </Link>
 
-                <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
+                <div className='w-1/2 md:w-full flex flex-col items-start justify-between pl-6 md:pl-0'>
                     <span className='text-blue-700 font-medium text-xl'>{type}</span>
-                    <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
-                    <p className='my-2 font-medium text-dark '>{summary}</p>
+                    <h2 className='my-2 w-full text-left text-4xl font-bold md:text-xl text-black'>{title}</h2>
+                    <p className='my-2 font-medium text-dark md:text-md text-justify'>{summary}</p>
                 </div>
             </article>
     )
@@ -31,20 +31,20 @@ const Project = ({type,title,img,summary})=>{
 
     return (
             <article className='w-full flex flex-col items-start justify-center rounded-2xl border
-            border-solid border-dark bg-light shadow-2xl p-6'>
+            border-solid border-dark bg-light shadow-2xl shadow-white p-6 md:my-4'>
                 <Link href='/' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                    <Image src={img} className="w-full h-64 object-cover"/>
+                    <Image src={img} className="w-full h-64 object-cover md:object-fill"/>
                 </Link>
 
                 <div className='w-full flex flex-col items-start justify-between mt-4'>
                     <span className='text-blue-700 font-medium text-xl'>{type}</span>
-                    <h2 className='my-2 w-full text-left text-xl font-bold'>{title}</h2>
-                    <p className='w-full'>{summary}</p>
+                    <h2 className='my-2 w-full text-left text-xl font-bold text-black md:text-md'>{title}</h2>
+                    <p className='w-full text-black md:text-justify'>{summary}</p>
                     <div className='w-full mt-2 flex items-center justify-between'>
-                        <Link href='/' className='text-lg font-semibold underline'>
+                        <Link href='/' className='text-lg font-semibold underline text-dark'>
                             Visit
                         </Link>
-                        <Link href='/' target='_blank' className='w-8'>
+                        <Link href='/' target='_blank' className='w-8 bg-dark rounded-md'>
                         {" "}
                         <GithubIcon></GithubIcon>
                         </Link>
@@ -58,13 +58,14 @@ export default function Projects() {
     return (
         <>
         <BaseLayout className='pt-12'>
-          <AnimatedText text={"Programming is the closest thing we have to magic."} className='!text-6xl !text-center mb-14'></AnimatedText>
+          <AnimatedText text={"Programming is the closest thing we have to magic."} 
+          className='!text-6xl !text-center mb-14 md:!text-2xl'></AnimatedText>
           
-            <div className='grid grid-cols-12 gap-24'>
-                <div className='col-span-12'>
-                    <FeaturedProjects title={'SMART RESTAURANT SYSTEM'} img={portoResto} type='Featured Project' summary='Aplikasi ini menawarkan sistem pemesanan inovatif melalui QR Code, memungkinkan pelanggan untuk dengan cepat melihat menu, memesan, dan membayar secara aman melalui Payment Gateway Tripay. 
+            <div className='grid grid-cols-12 gap-24 md:grid-cols-6 md:gap-0'>
+                <div className='col-span-12 md:col-span-6'>
+                    <FeaturedProjects title={'mdART RESTAURANT SYSTEM'} img={portoResto} type='Featured Project' summary={`Aplikasi ini menawarkan sistem pemesanan inovatif melalui QR Code, memungkinkan pelanggan untuk dengan cepat melihat menu, memesan, dan membayar secara aman melalui Payment Gateway Tripay. 
                     Dengan integrasi Pusher, notifikasi realtime disediakan kepada koki, kasir, dan pemilik restoran, memastikan operasional yang efisien. 
-                    Selain itu, aplikasi ini mendukung multi-user roles, seperti koki untuk mengelola pesanan, kasir untuk mengelola pembayaran, dan pemilik restoran untuk memantau kinerja keseluruhan dan mengelola menu.' >
+                    Selain itu, aplikasi ini mendukung multi-user roles, seperti koki untuk mengelola pesanan, kasir untuk mengelola pembayaran, dan pemilik restoran untuk memantau kinerja keseluruhan dan mengelola menu.`} >
 
                     </FeaturedProjects>
                 </div>
@@ -82,7 +83,7 @@ export default function Projects() {
                 </div>
 
                 <div className='col-span-6'>
-                    <Project title={'MENTAL HEALTH APP'} img={portoCalm} type='Project' summary='Aplikasi mental health dengan fitur utama mendeteksi tingkat stres yang dihubungkan dengan smartband xiaomi untuk melakukan pendetekan tingkat stres. Dibuat menggunakan flutter dan firebase sebagai backend as a service'></Project>
+                    <Project title={'MENTAL HEALTH APP'} img={portoCalm} type='Project' summary='Aplikasi mental health dengan fitur utama mendeteksi tingkat stres yang dihubungkan dengan mdartband xiaomi untuk melakukan pendetekan tingkat stres. Dibuat menggunakan flutter dan firebase sebagai backend as a service'></Project>
                 </div>
             </div>
         </BaseLayout>

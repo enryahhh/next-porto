@@ -8,7 +8,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 const montserat = Montserrat({
   subsets: ['latin'],
-  variable:"--font-montserrat"
+  variable:"--font-montserrat",
 })
 
 export const metadata = {
@@ -22,8 +22,8 @@ export default function RootLayout({ children }) {
       <Head>
 
       </Head>
-      <body className={montserat.className}>
-      <main className='bg-light w-full min-h-screen'>
+      <body className={`${montserat.className} bg-black text-light`}>
+      <main className='w-full min-h-screen'>
         <NavBar></NavBar>
           {children}
       </main>

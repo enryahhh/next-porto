@@ -13,10 +13,10 @@ export default function About() {
     return (
         <>
         <BaseLayout className='pt-12'>
-          <AnimatedText text={"About Lingga Juliansyah"} className='!text-6xl !text-center mb-14' ></AnimatedText>
+          <AnimatedText text={"About Lingga Juliansyah"} className='!text-6xl !text-center mb-14 md:!text-3xl sm:!text-2xl' ></AnimatedText>
           <div className='grid w-full grid-cols-6 gap-16'>
-              <div className='col-span-3 flex flex-col item-start justify-start'>
-                  <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Tentang Saya</h2>
+              <div className='col-span-3 md:col-span-6 flex flex-col item-start justify-start md:order-2 md:text-justify'>
+                  <h2 className='mb-4 text-lg font-bold uppercase text-white/90'>Tentang Saya</h2>
 
                   <p className='font-medium'>
                   Saya seorang lulusan baru dari Universitas Komputer Indonesia jurusan Teknik Informatika. Saya berfokus pada spesialisasi dalam pengembangan perangkat lunak, khususnya di bidang backend. 
@@ -47,7 +47,8 @@ export default function About() {
 
               </div>
 
-              <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 shadow-[15px_10px_0px_0_rgba(0,0,0,1)]'>
+              <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 
+              shadow-[15px_10px_0px_0_rgba(0,0,0,1)] md:col-span-6 md:order-1'>
               {/* <div className='absolute top-0 -z-5 -right-[1.5rem] w-[102%] h-[100%] rounded-[2rem] bg-dark'/> */}
                     <Image src={pp} className='w-full h-auto rounded-2xl'></Image>
               </div>
